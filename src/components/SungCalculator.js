@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Text, View, Image } from 'react-native';
+import React, {Component} from 'react';
+import {Image, Text, View} from 'react-native';
 import {LayoutStyles} from "./Styles";
 import CalcButton from "./CalcButton";
 import BigNumber from 'bignumber.js';
@@ -139,29 +139,16 @@ class SungCalculator extends Component {
         }
     }
 
-    //Generate a grid of buttons, assigning key values
+    //Generate a grid of buttons, assigning key values based on key matrix
     _renderButtonGrid() {
-        let gridComponents = [];
-
-        for(let i = 0; i < inputButtons.length; i++){
-            let rowValues = inputButtons[i];
-            let rowComponents = [];
-
-            //Generate a single row of button components
-            for(let j = 0; j < rowValues.length; j++){
-                let keyValue = rowValues[j];
-                rowComponents.push(
-                    <CalcButton value={keyValue}
-                                key={i + '-' + j}
-                                handleKeyPress={this._handleKeyPress.bind(this, keyValue)}/>
-                    );
-            }
-            //Assemble the array of button components into a View representing a row of keys
-            let assembledRow =
-                <View style={LayoutStyles.rowOfButtons} key={'row' + i}>{rowComponents}</View>;
-            gridComponents.push(assembledRow);
-        }
-        return gridComponents;
+        return inputButtons.map((row, index) => {
+            let rowComponents = row.map((keyValue, columnIndex) => {
+                return <CalcButton value={keyValue}
+                                   key={ 'key-' + columnIndex}
+                                   handleKeyPress={this._handleKeyPress.bind(this, keyValue)}/>;
+            });
+            return <View style={LayoutStyles.rowOfButtons} key={'row' + index}>{rowComponents}</View>;
+        });
     }
 
 }

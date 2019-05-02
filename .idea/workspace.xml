@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fe962d5-4e0e-4c71-8f10-7ffb1342241c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/CalcButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CalcButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SungCalculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SungCalculator.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,23 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/SungCalculator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="2818">
+              <caret line="141" column="74" selection-start-line="141" selection-start-column="74" selection-end-line="141" selection-end-column="74" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/CalcButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            <state relative-caret-position="368">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -66,8 +64,8 @@
       <list>
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/src/components/Styles.js" />
-        <option value="$PROJECT_DIR$/src/components/SungCalculator.js" />
         <option value="$PROJECT_DIR$/src/components/CalcButton.js" />
+        <option value="$PROJECT_DIR$/src/components/SungCalculator.js" />
       </list>
     </option>
   </component>
@@ -148,12 +146,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556671647334</updated>
-      <workItem from="1556671648686" duration="26656000" />
+      <workItem from="1556671648686" duration="27243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26656000" />
+    <option name="totallyTimeSpent" value="27243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="839" y="26" width="1081" height="1156" extended-state="0" />
@@ -204,6 +202,16 @@
         <state relative-caret-position="-254" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CalcButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Styles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1564">
@@ -213,18 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SungCalculator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CalcButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="2818">
+          <caret line="141" column="74" selection-start-line="141" selection-start-column="74" selection-end-line="141" selection-end-column="74" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
