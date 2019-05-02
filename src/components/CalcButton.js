@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { TouchableHighlight, Text } from 'react-native';
 import { ButtonStyles } from './Styles';
 
 const CalcButton = (props) => {
     return (
         <TouchableHighlight
-            style={[ ButtonStyles.inputButton, props.highlighted ? ButtonStyles.buttonHighlighted : null ]}
+            style={ButtonStyles.inputButton}
             onPress={props.handleKeyPress}
-            underlayColor='#00CC4B'
-        >
+            underlayColor='#00CC4B'>
+
             <Text style={ ButtonStyles.buttonText }>{ props.value }</Text>
         </TouchableHighlight>
     )

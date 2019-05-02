@@ -4,6 +4,7 @@ import {LayoutStyles} from "./Styles";
 import CalcButton from "./CalcButton";
 import BigNumber from 'bignumber.js';
 
+//Matrix of keys on the calculator
 const inputButtons = [
     ['C', '+', '-', 'x'],
     [0, 1, 2, '/'],
@@ -24,15 +25,21 @@ class SungCalculator extends Component {
         return (
             <View style={LayoutStyles.mainContainer}>
                 <View style={LayoutStyles.displayContainer}>
+
                     <View style={LayoutStyles.patternContainer}>
-                    <Image style={LayoutStyles.backgroundPattern}
-                           source={require('../../assets/backgroundPattern.png')}
-                    />
+                        <Image style={LayoutStyles.backgroundPattern}
+                               source={require('../../assets/backgroundPattern.png')}/>
                     </View>
-                        <View style={LayoutStyles.screen}>
-                            <Text style={LayoutStyles.screenText}>{this.state.displayValue}</Text>
-                        </View>
+
+                    <View style={LayoutStyles.screen}>
+                        <Text style={LayoutStyles.screenText}>{this.state.displayValue}</Text>
+                    </View>
+
+                    <View style={LayoutStyles.alienImageContainer}>
+                        <Image source={require('../../assets/greenAlien.png')}/>
+                    </View>
                 </View>
+
                 <View style={LayoutStyles.inputContainer}>
                     {this._renderButtonGrid()}
                 </View>
@@ -146,8 +153,7 @@ class SungCalculator extends Component {
                 rowComponents.push(
                     <CalcButton value={keyValue}
                                 key={i + '-' + j}
-                                handleKeyPress={this._handleKeyPress.bind(this, keyValue)}
-                                highlight={this.state.operation === keyValue}/>
+                                handleKeyPress={this._handleKeyPress.bind(this, keyValue)}/>
                     );
             }
             //Assemble the array of button components into a View representing a row of keys

@@ -48,8 +48,12 @@ export const LayoutStyles = StyleSheet.create({
     backgroundPattern: {
         flex:1,
         resizeMode: 'repeat'
-    }
+    },
 
+    alienImageContainer: {
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
 });
 
 export const ButtonStyles = StyleSheet.create({
@@ -61,15 +65,12 @@ export const ButtonStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         margin: 15
-
     },
+
     buttonText: {
         color: '#01FF5D',
         fontSize: 26,
         fontWeight: 'bold'
-    },
-    buttonHighlighted: {
-        backgroundColor: '#00CC4B'
     }
 });
 
